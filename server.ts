@@ -1,6 +1,7 @@
 import Express from "express";
 const app = Express();
 const port = 3000;
+import getRoute from "./src/routes/getRouter";
 
 app.use(Express.json());
 app.use(Express.urlencoded({ extended: true }));
@@ -19,9 +20,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.get("/", (req, res) => {
-  res.json({ message: "kuy" });
-});
+app.use("/api", getRoute);
 
 const server = app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
