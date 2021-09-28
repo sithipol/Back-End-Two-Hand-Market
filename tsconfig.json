@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "rootDir": "./",
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "strict": true,
+    "resolveJsonModule": true
+    // "baseUrl": ".",
+    // "paths": {
+    //   "@services/*": ["src/graphql/services/*"],
+    //   "@resolvers/*": ["src/graphql/resolvers/*"],
+    //   "@types/*": ["src/graphql/types/*"],
+    //   "@models/*": ["src/models/*"]
+    // }
+  }
+}
